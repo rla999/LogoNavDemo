@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 80px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    /* this is your hint */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+  }
+  .dropdown-button {
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-between;
+    padding: 8px 0;
+    width: 50px;
+  }
+
+  .dropdown-button span {
+    background: #000;
+    display: block;
+    height: 4px;
+    width: 70%;
+  }
+  nav ul {
+    background: #fff;
+    display: none;
+    margin: 0;
+    padding: 20px 0 0;
+    /* padding: 0; */
+    position: absolute;
+    right: 0;
+    /* top: 80%; */
+    width: 100%;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+
+  nav a {
+    border: 1px solid #000;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Header End */
